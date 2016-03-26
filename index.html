@@ -4,36 +4,51 @@
 </head>
 <body>
 
-
-
 <div class="text">
   <h1>Our Cool Mastermind by the Minute Squad</h1>
-  dfsadsfsdaf
 </div>
 
-<table style="width:100%">
-  <tr>
-    <td>
-      <div class="pin" id="pin_0"></div>
-    </td>
-    <td>
-      <div class="pin" id="pin_1"></div>
-    </td>
-    <td>
-      <div class="pin" id="pin_2"></div>
-    </td>
-    <td>
-      <div class="pin" id="pin_3"></div>
-    </td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-</table>
+<div id="gameSetup">
+  <table>
+    <tr>
+      <td>
+        <div class="pin" id="setup_pin_0" onclick="changeColor('setup_pin_0')"></div>
+      </td>
+      <td>
+        <div class="pin" id="setup_pin_1" onclick="changeColor('setup_pin_1')"></div>
+      </td>
+      <td>
+        <div class="pin" id="setup_pin_2" onclick="changeColor('setup_pin_2')"></div>
+      </td>
+      <td>
+        <div class="pin" id="setup_pin_3" onclick="changeColor('setup_pin_3')"></div>
+      </td>
+    </tr>
+  </table>
 
-<button type="button" onclick="popup()">Click Me!</button>
+  <button type="button" onclick="setupGame()">Save my Pattern!</button>
+</div>
+
+<div id="mainGame">
+  <table>
+    <tr id="mainRow">
+      <td>
+        <div class="pin" id="pin_0_0"></div>
+      </td>
+      <td>
+        <div class="pin" id="pin_0_1"></div>
+      </td>
+      <td>
+        <div class="pin" id="pin_0_2"></div>
+      </td>
+      <td>
+        <div class="pin" id="pin_0_3"></div>
+      </td>
+    </tr>
+  </table>
+
+  <button id="guess_0" type="button" onclick="guess(0)">Make a Guess!</button>
+</div>
 
 
 </body>
