@@ -10,18 +10,14 @@
 
 <div id="gameSetup">
   <table>
-    <tr>
-      <td>
-        <div class="pin" id="setup_pin_0" onclick="changeColor('setup_pin_0')"></div>
+    <tr id="row_setup">
+      <td class="pin" id="setup_pin_0" onclick="changeColor(this, 0)">
       </td>
-      <td>
-        <div class="pin" id="setup_pin_1" onclick="changeColor('setup_pin_1')"></div>
+      <td class="pin" id="setup_pin_1" onclick="changeColor(this, 1)">
       </td>
-      <td>
-        <div class="pin" id="setup_pin_2" onclick="changeColor('setup_pin_2')"></div>
+      <td class="pin" id="setup_pin_2" onclick="changeColor(this, 2)">
       </td>
-      <td>
-        <div class="pin" id="setup_pin_3" onclick="changeColor('setup_pin_3')"></div>
+      <td class="pin" id="setup_pin_3" onclick="changeColor(this, 3)">
       </td>
     </tr>
   </table>
@@ -31,23 +27,19 @@
 
 <div id="mainGame">
   <table>
-    <tr id="mainRow">
-      <td>
-        <div class="pin" id="pin_0_0"></div>
+    <tr id="row_0">
+      <td class="pin" id="pin_0_0" onclick="changeColor(this, 0)">
       </td>
-      <td>
-        <div class="pin" id="pin_0_1"></div>
+      <td class="pin" id="pin_0_1" onclick="changeColor(this, 1)">
       </td>
-      <td>
-        <div class="pin" id="pin_0_2"></div>
+      <td class="pin" id="pin_0_2" onclick="changeColor(this, 2)">
       </td>
-      <td>
-        <div class="pin" id="pin_0_3"></div>
+      <td class="pin" id="pin_0_3" onclick="changeColor(this, 3)">
       </td>
     </tr>
   </table>
 
-  <button id="guess_0" type="button" onclick="guess(0)">Make a Guess!</button>
+  <button id="guess" type="button" onclick="guess()">Make a Guess!</button>
 </div>
 
 
